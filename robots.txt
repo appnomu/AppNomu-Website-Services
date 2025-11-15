@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Allow CSS and JS for better SEO (Google needs these)
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Block sensitive directories
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /database/
+Disallow: /logs/
+Disallow: /uploads/
+Disallow: /vendor/
+Disallow: /.env
+Disallow: /.htaccess
+
+# Block specific file types
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+
+# Sitemap location
+Sitemap: https://services.appnomu.com/sitemap.xml

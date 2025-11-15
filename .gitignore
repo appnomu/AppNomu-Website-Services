@@ -1,0 +1,52 @@
+# Environment files
+.env
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+logs/*.log
+*.log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tmp
+
+# Documentation (development only)
+*.md
+!README.md
+
+# Database dumps
+*.sql
+*.sqlite
+
+# Composer
+/vendor/
+composer.lock
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Cache
+cache/
+*.cache

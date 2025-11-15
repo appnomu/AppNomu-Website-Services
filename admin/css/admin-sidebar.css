@@ -1,0 +1,120 @@
+/* Professional Admin Sidebar Styles */
+
+/* Sidebar base styling */
+#sidebarMenu {
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+/* Navigation link hover effects */
+.nav-link {
+    transition: all 0.3s ease;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.1) !important;
+    color: #0d6efd !important;
+    transform: translateX(3px);
+}
+
+.nav-link.active {
+    background-color: #0d6efd !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(13, 110, 253, 0.3);
+}
+
+.nav-link.active i {
+    color: white !important;
+}
+
+/* Section headings */
+.sidebar-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    color: #6c757d;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+/* Icons styling */
+.nav-link i {
+    width: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Logout button special styling */
+.text-danger:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* User info section */
+.user-info {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem;
+}
+
+/* Brand section */
+.admin-brand {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sidebarMenu {
+        box-shadow: none;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+    
+    .sidebar-heading {
+        font-size: 0.65rem;
+    }
+}
+
+/* Animation for active state */
+@keyframes slideIn {
+    from {
+        transform: translateX(-5px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.nav-link.active {
+    animation: slideIn 0.3s ease;
+}
+
+/* Scrollbar styling for sidebar */
+#sidebarMenu::-webkit-scrollbar {
+    width: 4px;
+}
+
+#sidebarMenu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#sidebarMenu::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+}
+
+#sidebarMenu::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

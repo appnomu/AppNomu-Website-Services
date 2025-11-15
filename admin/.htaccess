@@ -1,0 +1,23 @@
+# Admin Directory .htaccess
+# This prevents the root .htaccess rules from interfering with admin pages
+
+# Disable URL rewriting for admin directory
+RewriteEngine Off
+
+# Allow directory access for admin panel
+Options +Indexes
+
+# Ensure PHP files are processed
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Security: Prevent access to sensitive files
+<FilesMatch "\.(env|log|sql|md|txt|conf|ini|bak|old|tmp)$">
+    Require all denied
+</FilesMatch>
+
+# Allow access to all other files
+<FilesMatch "\.">
+    Require all granted
+</FilesMatch>

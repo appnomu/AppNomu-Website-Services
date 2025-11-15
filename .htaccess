@@ -1,0 +1,88 @@
+# Custom error pages
+ErrorDocument 404 /404.php
+
+# Enable URL rewriting
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Exclude admin directory from rewrite rules
+  RewriteCond %{REQUEST_URI} !^/admin/
+  
+  # Hide .php extension
+  # First, check if the requested filename with .php extension exists
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  # Then rewrite the URL internally to the PHP file
+  RewriteRule ^([^/]+)/?$ $1.php [L,QSA]
+  
+  # For files in subdirectories (handle path/to/file format)
+  RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+  RewriteRule ^(.+?)/?$ $1.php [L,QSA]
+  
+  # If the requested file or directory doesn't exist, redirect to 404
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /404.php [L]
+  
+  # Force HTTPS (enabled for security)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} !^localhost
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Remove trailing slash
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ /$1 [L,R=301]
+  
+  # Prevent directory browsing
+  Options -Indexes
+</IfModule>
+
+# Basic Security Headers (added incrementally)
+<IfModule mod_headers.c>
+  # XSS Protection (modified for compatibility)
+  Header set X-XSS-Protection "1"
+  
+  # Content-Type Protection (working ✅)
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Frame Protection (working ✅)
+  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # Privacy Protection (working ✅)
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Server Information Protection
+  Header unset Server
+  Header unset X-Powered-By
+  
+  # Additional Safe Security Headers
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header set X-Permitted-Cross-Domain-Policies "none"
+  
+  # Advanced Performance Headers
+  # Cache Control for static assets (1 year)
+  <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|webp)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+    Header set ETag ""
+    FileETag None
+  </FilesMatch>
+  
+  # Cache Control for HTML files (1 hour)
+  <FilesMatch "\.(html|htm|php)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+  
+  # Cache Control for XML files (1 day)
+  <FilesMatch "\.(xml|txt)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
+
+# Protect sensitive files
+<FilesMatch "\.(env|log|sql|md|txt|conf|ini|bak|old|tmp)$">
+  Require all denied
+</FilesMatch>
+
+# Protect logs directory
+<Directory "logs">
+  Require all denied
+</Directory>
