@@ -1,3 +1,4 @@
+    <?php if (!class_exists('Brand')) { require_once __DIR__ . '/brand.php'; } ?>
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container">
@@ -5,13 +6,13 @@
                 <!-- Company Info Column -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="mb-3">
-                        <img src="https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png" alt="AppNomu Logo" height="45" class="footer-logo">
+                        <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?> Logo" height="45" class="footer-logo">
                     </div>
-                    <p class="text-white-50 mb-4">Professional web design, mobile apps, and digital solutions for African businesses. Trusted by 1,200+ clients across Uganda, Kenya, and beyond.</p>
+                    <p class="text-white-50 mb-4"><?php echo Brand::refreshCopy('Professional web design, mobile apps, and digital solutions for African businesses. Trusted by 1,200+ clients across Uganda, Kenya, and beyond.'); ?></p>
                     
                     <!-- Social Links -->
                     <div class="mb-4">
-                        <h6 class="text-white mb-3">Follow Us</h6>
+                        <h6 class="text-white mb-3">Follow <?php echo Brand::SHORT_NAME; ?></h6>
                         <div class="d-flex gap-2">
                             <a href="https://www.facebook.com/appnomu" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
                                 <i class="bi bi-facebook"></i>
@@ -131,7 +132,7 @@
                     
                     <!-- Email -->
                     <div class="mb-3">
-                        <p class="text-white-50 mb-0"><i class="bi bi-envelope me-2 text-success"></i><a href="mailto:info@appnomu.com" class="text-white-50 text-decoration-none">info@appnomu.com</a></p>
+                        <p class="text-white-50 mb-0"><i class="bi bi-envelope me-2 text-success"></i><a href="mailto:<?php echo Brand::SUPPORT_EMAIL; ?>" class="text-white-50 text-decoration-none"><?php echo Brand::SUPPORT_EMAIL; ?></a></p>
                     </div>
                     
                 </div>
@@ -181,7 +182,7 @@
             
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; <?php echo date('Y'); ?> AppNomu SalesQ Ltd. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2026 <?php echo Brand::LEGAL_NAME; ?>. All rights reserved.</p>
                     <p class="small text-white-50 mt-1">Proudly designed with <i class="bi bi-heart-fill text-danger"></i> by the CEO - Bahati Asher Faith himself</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">

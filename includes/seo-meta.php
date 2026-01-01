@@ -1,4 +1,7 @@
 <?php
+if (!class_exists('Brand') && file_exists(__DIR__ . '/brand.php')) {
+    require_once __DIR__ . '/brand.php';
+}
 /**
  * SEO Meta Tags Generator - Safe Implementation
  * Generates proper SEO meta tags for each page
@@ -22,6 +25,12 @@ class SEOMeta {
         $title = $customTitle ?: ($seoData['title'] ?: self::$defaultTitle);
         $description = $customDescription ?: ($seoData['description'] ?: self::$defaultDescription);
         $keywords = $customKeywords ?: ($seoData['keywords'] ?: self::$defaultKeywords);
+
+        if (class_exists('Brand')) {
+            $title = Brand::refreshCopy($title);
+            $description = Brand::refreshCopy($description);
+            $keywords = Brand::refreshCopy($keywords);
+        }
         
         // Generate canonical URL
         $canonicalUrl = self::getCanonicalUrl();
@@ -106,18 +115,21 @@ class SEOMeta {
         $output .= "    <meta property=\"og:description\" content=\"{$description}\">\n";
         $output .= "    <meta property=\"og:url\" content=\"{$canonicalUrl}\">\n";
         $output .= "    <meta property=\"og:type\" content=\"website\">\n";
-        $output .= "    <meta property=\"og:image\" content=\"https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png\">\n";
-        $output .= "    <meta property=\"og:site_name\" content=\"AppNomu Business Services\">\n";
+        $ogImage = class_exists('Brand') ? Brand::OG_IMAGE_URL : 'https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png';
+        $siteName = class_exists('Brand') ? Brand::NAME : 'AppNomu Business Services';
+        $output .= "    <meta property=\"og:image\" content=\"{$ogImage}\">\n";
+        $output .= "    <meta property=\"og:site_name\" content=\"{$siteName}\">\n";
         
         // Twitter Card tags
         $output .= "    <meta name=\"twitter:card\" content=\"summary_large_image\">\n";
         $output .= "    <meta name=\"twitter:title\" content=\"{$title}\">\n";
         $output .= "    <meta name=\"twitter:description\" content=\"{$description}\">\n";
-        $output .= "    <meta name=\"twitter:image\" content=\"https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png\">\n";
+        $output .= "    <meta name=\"twitter:image\" content=\"{$ogImage}\">\n";
         
         // Additional SEO tags
         $output .= "    <meta name=\"robots\" content=\"index, follow\">\n";
-        $output .= "    <meta name=\"author\" content=\"AppNomu Business Services\">\n";
+        $author = class_exists('Brand') ? Brand::LEGAL_NAME : 'AppNomu Business Services';
+        $output .= "    <meta name=\"author\" content=\"{$author}\">\n";
         $output .= "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n";
         
         return $output;

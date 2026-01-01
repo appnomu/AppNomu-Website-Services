@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/brand.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +21,16 @@
         SEOMeta::generateMeta();
     } else {
         // Fallback meta tags
-        echo '<title>AppNomu | Websites | Domains | Software Development and Custom Enterprise Software</title>';
-        echo '<meta name="description" content="AppNomu offers professional website design, mobile app development, unlimited SSD hosting, cheap domain registration & custom enterprise software solutions.">';
+        echo '<title>' . Brand::NAME . ' | Websites | Domains | Software Development and Custom Enterprise Software</title>';
+        echo '<meta name="description" content="' . Brand::NAME . ' offers professional website design, mobile app development, unlimited SSD hosting, cheap domain registration & custom enterprise software solutions.">';
         echo '<meta name="keywords" content="website design, mobile app development, software development, web hosting, domain registration, enterprise software">';
         echo '<meta name="robots" content="index, follow">';
     }
     ?>
     
     <!-- Favicon -->
-    <link rel="icon" href="https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png">
-    <link rel="apple-touch-icon" href="https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png">
+    <link rel="icon" href="<?php echo Brand::FAVICON_URL; ?>">
+    <link rel="apple-touch-icon" href="<?php echo Brand::FAVICON_URL; ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
@@ -51,118 +52,100 @@
     
     <!-- Structured Data for SEO - Local Business Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "AppNomu Business Services",
-      "description": "Best website designer Uganda offering affordable hosting, reliable domain registration & mobile app development. Most affordable app developers near you in Bugiri.",
-      "url": "https://services.appnomu.com",
-      "logo": "https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png",
-      "image": "https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png",
-      "telephone": "+256200948420",
-      "email": "info@appnomu.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "77 Market Street",
-        "addressLocality": "Bugiri Municipality",
-        "addressRegion": "Bugiri",
-        "addressCountry": "UG",
-        "postalCode": ""
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "0.5714",
-        "longitude": "33.7419"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Bugiri"
-        },
-        {
-          "@type": "City",
-          "name": "Kampala"
-        },
-        {
-          "@type": "City",
-          "name": "Jinja"
-        },
-        {
-          "@type": "City",
-          "name": "Mbale"
-        },
-        {
-          "@type": "Country",
-          "name": "Uganda"
-        }
-      ],
-      "priceRange": "UGX 50,000 - UGX 5,000,000",
-      "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-13:00",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+256200948420",
-        "contactType": "customer service",
-        "availableLanguage": ["English"],
-        "areaServed": "UG"
-      },
-      "sameAs": [
-        "https://www.facebook.com/appnomu",
-        "https://www.twitter.com/appnomu",
-        "https://www.linkedin.com/company/our-appnomu",
-        "https://www.instagram.com/appnomu"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Digital Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Website Designing Uganda",
-              "description": "Professional website design and development services in Uganda"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Cheaper Website Hosting",
-              "description": "Affordable hosting solutions with 99.9% uptime"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Reliable Domain Registration",
-              "description": "Domain registration services for .com, .ug, .co.ug domains"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Mobile App Development Uganda",
-              "description": "Android and iOS mobile application development"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Affordable VPS Hosting Provider",
-              "description": "Virtual Private Server hosting solutions"
-            }
-          }
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "1200"
-      }
-    }
+    <?php
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'LocalBusiness',
+            'name' => Brand::NAME,
+            'description' => 'Africa’s digital lab for websites, mobile apps, hosting, and enterprise software.',
+            'url' => Brand::WEBSITE,
+            'logo' => Brand::LOGO_URL,
+            'image' => Brand::LOGO_URL,
+            'telephone' => '+256200948420',
+            'email' => Brand::SUPPORT_EMAIL,
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => '77 Market Street',
+                'addressLocality' => 'Bugiri Municipality',
+                'addressRegion' => 'Bugiri',
+                'addressCountry' => 'UG',
+                'postalCode' => ''
+            ],
+            'geo' => [
+                '@type' => 'GeoCoordinates',
+                'latitude' => '0.5714',
+                'longitude' => '33.7419'
+            ],
+            'areaServed' => [
+                ['@type' => 'City', 'name' => 'Bugiri'],
+                ['@type' => 'City', 'name' => 'Kampala'],
+                ['@type' => 'City', 'name' => 'Jinja'],
+                ['@type' => 'City', 'name' => 'Mbale'],
+                ['@type' => 'Country', 'name' => 'Uganda'],
+            ],
+            'priceRange' => 'UGX 50,000 - UGX 5,000,000',
+            'openingHours' => 'Mo-Fr 08:00-18:00, Sa 09:00-13:00',
+            'contactPoint' => [
+                '@type' => 'ContactPoint',
+                'telephone' => '+256200948420',
+                'contactType' => 'customer service',
+                'availableLanguage' => ['English'],
+                'areaServed' => 'UG'
+            ],
+            'sameAs' => [
+                'https://www.facebook.com/appnomu',
+                'https://www.twitter.com/appnomu',
+                'https://www.linkedin.com/company/our-appnomu',
+                'https://www.instagram.com/appnomu'
+            ],
+            'hasOfferCatalog' => [
+                '@type' => 'OfferCatalog',
+                'name' => 'Digital Services',
+                'itemListElement' => [
+                    [
+                        '@type' => 'Offer',
+                        'itemOffered' => [
+                            '@type' => 'Service',
+                            'name' => 'Website Designing Uganda',
+                            'description' => 'Professional website design and development services in Uganda'
+                        ]
+                    ],
+                    [
+                        '@type' => 'Offer',
+                        'itemOffered' => [
+                            '@type' => 'Service',
+                            'name' => 'Cheaper Website Hosting',
+                            'description' => 'Affordable hosting solutions with 99.9% uptime'
+                        ]
+                    ],
+                    [
+                        '@type' => 'Offer',
+                        'itemOffered' => [
+                            '@type' => 'Service',
+                            'name' => 'Reliable Domain Registration',
+                            'description' => 'Domain registration services for .com, .ug, .co.ug domains'
+                        ]
+                    ],
+                    [
+                        '@type' => 'Service',
+                        'name' => 'Mobile App Development Uganda',
+                        'description' => 'Android and iOS mobile application development'
+                    ],
+                    [
+                        '@type' => 'Service',
+                        'name' => 'Affordable VPS Hosting Provider',
+                        'description' => 'Virtual Private Server hosting solutions'
+                    ],
+                ]
+            ],
+            'aggregateRating' => [
+                '@type' => 'AggregateRating',
+                'ratingValue' => '5.0',
+                'reviewCount' => '1200'
+            ]
+        ];
+        echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    ?>
     </script>
     
     <!-- Google Analytics (GA4) -->
@@ -197,12 +180,12 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation" aria-label="Main navigation">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <a class="navbar-brand me-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>" aria-label="AppNomu - Go to homepage">
-                        <img src="https://services.appnomu.com/assets/images/AppNomu%20SalesQ%20logo.png" alt="AppNomu Business Services Logo" height="45">
+                    <a class="navbar-brand me-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>" aria-label="<?php echo Brand::NAME; ?> - Go to homepage">
+                        <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?> Logo" height="45">
                     </a>
-                    <a href="tel:+256200948420" class="d-none d-lg-block btn btn-danger ms-2 px-3 py-2 call-now-btn" aria-label="Call AppNomu at +256 200 948 420">
+                    <a href="tel:+256200948420" class="d-none d-lg-block btn btn-danger ms-2 px-3 py-2 call-now-btn" aria-label="Call <?php echo Brand::NAME; ?> at +256 200 948 420">
                         <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
-                        <span><strong>Call Now:</strong> +256 200 948 420</span>
+                        <span><strong>Call <?php echo Brand::SHORT_NAME; ?>:</strong> +256 200 948 420</span>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
