@@ -6,34 +6,36 @@ include_once 'includes/header.php';
 ?>
 
 <!-- Website Audit Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<section class="page-hero centered">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <div class="mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold">FREE WEBSITE AUDIT</span>
-                </div>
-                <h1 class="display-4 fw-bold mb-4">Is Your Website Losing You Money?</h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Get a professional analysis of your website's performance, SEO, security, and content originality. Comprehensive 60+ point analysis to discover exactly what's holding your business back online.
-                </p>
+                <span class="badge-label">FREE WEBSITE AUDIT</span>
+                <h1>Is Your Website <span style="color: #10b981;">Losing You Money?</span></h1>
+                <p>Get a professional analysis of your website's performance, SEO, security, and content originality. Comprehensive 60+ point analysis to discover exactly what's holding your business back online.</p>
                 <div class="row g-3 mt-4">
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <i class="bi bi-speedometer2 fs-2 text-white mb-2"></i>
-                            <h3 class="h5 fw-bold text-white mb-0">Performance Check</h3>
+                        <div class="modern-card text-center">
+                            <div class="card-icon green mx-auto">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+                            <h4>Performance Check</h4>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <i class="bi bi-search fs-2 text-white mb-2"></i>
-                            <h3 class="h5 fw-bold text-white mb-0">SEO Analysis</h3>
+                        <div class="modern-card text-center">
+                            <div class="card-icon amber mx-auto">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h4>SEO Analysis</h4>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <i class="bi bi-shield-check fs-2 text-white mb-2"></i>
-                            <h3 class="h5 fw-bold text-white mb-0">Security Scan</h3>
+                        <div class="modern-card text-center">
+                            <div class="card-icon purple mx-auto">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h4>Security Scan</h4>
                         </div>
                     </div>
                 </div>

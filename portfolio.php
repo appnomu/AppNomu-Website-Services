@@ -57,17 +57,17 @@ try {
 }
 ?>
 
-<!-- Hero Section -->
-<section class="py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white;">
-    <div class="container py-5">
-        <div class="row align-items-center">
+<!-- Portfolio Hero Section -->
+<section class="page-hero centered">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <span class="badge bg-light text-primary px-3 py-2 mb-3">OUR PORTFOLIO</span>
-                <h1 class="display-3 fw-bold mb-4">Transforming Ideas Into Digital Reality</h1>
-                <p class="lead mb-4" style="opacity: 0.9;">Explore our portfolio of 1,200+ successful projects. From stunning websites to powerful mobile apps, see how we've helped businesses across Africa and beyond achieve their digital goals.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="request-quote.php" class="btn btn-light btn-lg px-4 py-3 fw-bold">Start Your Project</a>
-                    <a href="#projects" class="btn btn-outline-light btn-lg px-4 py-3">View Projects</a>
+                <span class="badge-label">OUR PORTFOLIO</span>
+                <h1>Transforming Ideas Into <span style="color: #10b981;">Digital Reality</span></h1>
+                <p>Explore our portfolio of 1,200+ successful projects. From stunning websites to powerful mobile apps, see how we've helped businesses across Africa achieve their digital goals.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                    <a href="request-quote.php" class="btn btn-cta">Start Your Project <i class="bi bi-arrow-right ms-2"></i></a>
+                    <a href="#projects" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">View Projects</a>
                 </div>
             </div>
         </div>

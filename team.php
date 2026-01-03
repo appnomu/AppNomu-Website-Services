@@ -12,34 +12,30 @@ include_once 'includes/header.php';
 ?>
 
 <!-- Team Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<section class="page-hero centered">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <div class="mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold">MEET OUR TEAM</span>
-                </div>
-                <h1 class="display-4 fw-bold mb-4">20+ Experts Across 2 Continents</h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Our diverse team of developers, designers, and digital strategists spans Africa and USA. United by passion for innovation and commitment to African business success.
-                </p>
+                <span class="badge-label">MEET OUR TEAM</span>
+                <h1>20+ Experts Across <span style="color: #10b981;">2 Continents</span></h1>
+                <p>Our diverse team of developers, designers, and digital strategists spans Africa and USA. United by passion for innovation and commitment to African business success.</p>
                 <div class="row g-3 mt-4">
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-2 fw-bold text-white mb-0">20+</h3>
-                            <p class="mb-0 text-white-50">Expert Team Members</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">20+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Expert Team Members</div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-2 fw-bold text-white mb-0">1,200+</h3>
-                            <p class="mb-0 text-white-50">Projects Completed</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">1,200+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Projects Completed</div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-2 fw-bold text-white mb-0">50+</h3>
-                            <p class="mb-0 text-white-50">Years Combined Experience</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">50+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Years Combined Experience</div>
                         </div>
                     </div>
                 </div>

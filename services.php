@@ -3,51 +3,47 @@
 include_once 'includes/header.php';
 ?>
 
-<!-- Enhanced Services Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<!-- Services Hero Section -->
+<section class="page-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold me-3">FULL-SERVICE AGENCY</span>
-                    <span class="badge bg-success mb-0 px-3 py-2 fw-bold text-white">AFRICAN EXPERTISE</span>
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    Website Designing Uganda | <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Affordable Hosting Solutions</span>
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Best website designer Uganda offering cheaper website hosting, reliable domain registration & affordable VPS hosting provider. Professional website developers Uganda with mobile app development services. Most affordable app developers near you in Bugiri.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#website-design" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">View Services</a>
-                    <a href="request-quote.php" class="btn btn-outline-light btn-lg px-4 py-3">Get Free Quote</a>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">OUR SERVICES</span>
+                <h1>Professional Digital Solutions for Your Business</h1>
+                <p>From websites to mobile apps, we provide end-to-end digital solutions. Best website designer Uganda offering affordable hosting, domain registration & custom development.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#website-design" class="btn btn-cta">
+                        View Services <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                    <a href="request-quote.php" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        Get Free Quote
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-4 mt-lg-0">
-                <!-- Service Stats -->
+            <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">6</h3>
-                            <p class="mb-0 text-white-50">Core Services</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">6</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Core Services</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">3</h3>
-                            <p class="mb-0 text-white-50">Day Delivery</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">3</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Day Delivery</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">$299</h3>
-                            <p class="mb-0 text-white-50">Starting Price</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">$299</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Starting Price</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">100%</h3>
-                            <p class="mb-0 text-white-50">Satisfaction</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">100%</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Satisfaction</div>
                         </div>
                     </div>
                 </div>

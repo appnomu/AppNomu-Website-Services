@@ -6,51 +6,47 @@ include_once 'includes/header.php';
 <!-- Custom CSS for service selection -->
 <link rel="stylesheet" href="assets/css/service-selection.css">
 
-<!-- Enhanced Quote Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<!-- Quote Hero Section -->
+<section class="page-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold me-3">FREE QUOTE</span>
-                    <span class="badge bg-success mb-0 px-3 py-2 fw-bold text-white">24H RESPONSE</span>
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    Get Your <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">African-Made</span> Digital Solution Quote
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Join 1,200+ satisfied clients across Africa and beyond. Get a detailed quote for your project with transparent pricing, clear timelines, and guaranteed quality. No hidden costs, no surprises.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#quoteForm" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">Get Free Quote</a>
-                    <a href="tel:+256200948420" class="btn btn-outline-light btn-lg px-4 py-3">Call: +256 200 948 420</a>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">FREE QUOTE</span>
+                <h1>Get Your <span style="color: #10b981;">Digital Solution</span> Quote Today</h1>
+                <p>Join 1,200+ satisfied clients across Africa. Get a detailed quote with transparent pricing, clear timelines, and guaranteed quality. No hidden costs.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#quoteForm" class="btn btn-cta">
+                        Get Free Quote <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                    <a href="tel:+256200948420" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        <i class="bi bi-telephone me-2"></i> +256 200 948 420
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-4 mt-lg-0">
-                <!-- Trust Stats -->
+            <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">1,200+</h3>
-                            <p class="mb-0 text-white-50">Projects Delivered</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">1,200+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Projects Delivered</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">24H</h3>
-                            <p class="mb-0 text-white-50">Quote Response</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">24H</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Quote Response</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">70%</h3>
-                            <p class="mb-0 text-white-50">Cost Savings</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">70%</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Cost Savings</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">100%</h3>
-                            <p class="mb-0 text-white-50">Satisfaction Rate</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #10b981;">100%</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Satisfaction Rate</div>
                         </div>
                     </div>
                 </div>

@@ -39,10 +39,10 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Figtree -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -175,85 +175,56 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="sticky-top" role="banner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation" aria-label="Main navigation">
+    <!-- Professional Header -->
+    <header class="site-header" role="banner" style="background: #ffffff !important;">
+        <nav class="navbar navbar-expand-lg py-3" role="navigation" aria-label="Main navigation" style="background: #ffffff !important; border-bottom: 1px solid #e5e7eb;">
             <div class="container">
-                <div class="d-flex align-items-center">
-                    <a class="navbar-brand me-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>" aria-label="<?php echo Brand::NAME; ?> - Go to homepage">
-                        <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?> Logo" height="45">
-                    </a>
-                    <a href="tel:+256200948420" class="d-none d-lg-block btn btn-danger ms-2 px-3 py-2 call-now-btn" aria-label="Call <?php echo Brand::NAME; ?> at +256 200 948 420">
-                        <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
-                        <span><strong>Call <?php echo Brand::SHORT_NAME; ?>:</strong> +256 200 948 420</span>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>" aria-label="<?php echo Brand::NAME; ?> - Go to homepage">
+                    <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?>" height="40">
+                </a>
+                
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-4" style="color: #111827;"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-4 gap-1">
                         <?php if (isset($menuItems) && is_array($menuItems)): ?>
                             <?php foreach ($menuItems as $item): ?>
                                 <li class="nav-item">
-                                    <a class="<?php echo isset($item['class']) ? $item['class'] : 'nav-link'; ?>" href="<?php echo $item['url']; ?>"><?php echo $item['label']; ?></a>
+                                    <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo $item['url']; ?>"><?php echo $item['label']; ?></a>
                                 </li>
                             <?php endforeach; ?>
-                            <li class="nav-item">
-                                <a class="btn btn-primary ms-lg-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'request-quote' : 'request-quote'; ?>">Get a Quote</a>
-                            </li>
                         <?php else: ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'services' : 'services'; ?>"><i class="bi bi-grid me-2 text-primary"></i>All Services</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'website-design-uganda' : 'website-design-uganda'; ?>"><i class="bi bi-geo-alt-fill me-2 text-success"></i>🇺🇬 Website Design Uganda</a></li>
-                                </ul>
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'index' : 'index'; ?>">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo isset($baseUrl) ? $baseUrl . 'portfolio' : 'portfolio'; ?>">Portfolio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Company
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'about' : 'about'; ?>"><i class="bi bi-building me-2 text-primary"></i>About Us</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'products' : 'products'; ?>"><i class="bi bi-box-seam me-2 text-info"></i>Products</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'team' : 'team'; ?>"><i class="bi bi-people me-2 text-success"></i>Our Team</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'our-impact' : 'our-impact'; ?>"><i class="bi bi-graph-up-arrow me-2 text-info"></i>Our Impact</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'contact' : 'contact'; ?>"><i class="bi bi-envelope me-2 text-primary"></i>Contact Us</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'faq' : 'faq'; ?>"><i class="bi bi-question-circle me-2 text-warning"></i>FAQ</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </a>
-                                <ul class="dropdown-menu shadow border-0">
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'payment-plans' : 'payment-plans'; ?>"><i class="bi bi-credit-card me-2 text-warning"></i>Payment Plans</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'website-audit' : 'website-audit'; ?>"><i class="bi bi-search me-2 text-primary"></i>Free Website Audit</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'roi-calculator' : 'roi-calculator'; ?>"><i class="bi bi-calculator me-2 text-success"></i>ROI Calculator</a></li>
-                                    <li><a class="dropdown-item py-2" href="<?php echo isset($baseUrl) ? $baseUrl . 'security' : 'security'; ?>"><i class="bi bi-shield-check me-2 text-info"></i>Security</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item py-2" href="https://clients.appnomu.com/" target="_blank"><i class="bi bi-cloud me-2 text-info"></i>Web Hosting <i class="bi bi-box-arrow-up-right ms-1 small"></i></a></li>
-                                </ul>
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'services' : 'services'; ?>">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-warning text-dark ms-lg-2 px-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'hire-expert' : 'hire-expert'; ?>"><i class="bi bi-person-check-fill me-1"></i> Hire Expert</a>
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'portfolio' : 'portfolio'; ?>">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-primary ms-lg-2 px-3" href="<?php echo isset($baseUrl) ? $baseUrl . 'request-quote' : 'request-quote'; ?>">Get a Quote</a>
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'about' : 'about'; ?>">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'products' : 'products'; ?>">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 py-2" style="color: #1f2937 !important; font-weight: 600;" href="<?php echo isset($baseUrl) ? $baseUrl . 'contact' : 'contact'; ?>">Contact</a>
                             </li>
                         <?php endif; ?>
                     </ul>
+                    
+                    <!-- CTA Button -->
+                    <a class="btn btn-cta" href="<?php echo isset($baseUrl) ? $baseUrl . 'request-quote' : 'request-quote'; ?>">
+                        Get a Quote
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </nav>

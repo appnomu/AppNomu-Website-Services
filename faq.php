@@ -6,20 +6,16 @@ include_once 'includes/header.php';
 ?>
 
 <!-- FAQ Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<section class="page-hero centered">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <div class="mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold">FREQUENTLY ASKED QUESTIONS</span>
-                </div>
-                <h1 class="display-4 fw-bold mb-4">Got Questions? We've Got Answers</h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Everything you need to know about our services, pricing, and processes. Can't find what you're looking for? Contact us directly.
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="#general-faq" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">Browse FAQs</a>
-                    <a href="contact" class="btn btn-outline-light btn-lg px-4 py-3">Contact Support</a>
+                <span class="badge-label">FREQUENTLY ASKED QUESTIONS</span>
+                <h1>Got Questions? <span style="color: #10b981;">We've Got Answers</span></h1>
+                <p>Everything you need to know about our services, pricing, and processes. Can't find what you're looking for? Contact us directly.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                    <a href="#general-faq" class="btn btn-cta">Browse FAQs <i class="bi bi-arrow-down ms-2"></i></a>
+                    <a href="contact" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">Contact Support</a>
                 </div>
             </div>
         </div>

@@ -3,391 +3,277 @@
 include_once 'includes/header.php';
 ?>
 
-<!-- Hero Section -->
-<section class="hero-section position-relative d-flex align-items-center" style="min-height: 600px; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); overflow: hidden;">
-    
-    <!-- Subtle Wave Background -->
-    <div class="position-absolute w-100 h-100" style="bottom: 0; left: 0; opacity: 0.1; max-width: 100%;">
-        <svg viewBox="0 0 1200 320" style="width: 100%; height: 100%;">
-            <path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </div>
-    
-    <div class="container position-relative py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold me-3" style="font-size: 0.85rem;">TRUSTED BY 1,200+ BUSINESSES</span>
-                    <span class="badge bg-primary mb-0 px-3 py-2 fw-bold text-white" style="font-size: 0.85rem;">5-STAR RATED</span>
+<!-- Hero Section - Modern Clean Design -->
+<section class="hero-modern py-5 py-lg-6" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); min-height: 90vh; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left Content -->
+            <div class="col-lg-6">
+                <!-- Trust Badge -->
+                <div class="d-inline-flex align-items-center gap-2 mb-4 px-3 py-2 rounded-pill" style="background: #f0fdf4; border: 1px solid #bbf7d0;">
+                    <span class="d-flex align-items-center justify-content-center rounded-circle" style="width: 24px; height: 24px; background: #10b981;">
+                        <i class="bi bi-check2 text-white" style="font-size: 14px;"></i>
+                    </span>
+                    <span style="color: #166534; font-weight: 600; font-size: 0.875rem;">Trusted by 1,200+ businesses across Africa</span>
                 </div>
                 
-                <h1 class="display-3 fw-bold mb-4 text-white" style="line-height: 1.2;">Professional <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Web & Mobile Solutions</span> Delivered in 3 Days</h1>
+                <!-- Main Headline -->
+                <h1 class="display-4 fw-bold mb-4" style="color: #111827; line-height: 1.1; letter-spacing: -0.02em;">
+                    Build Your Digital Presence with <span style="color: #10b981;">Expert Solutions</span>
+                </h1>
                 
-                <p class="lead mb-4 text-white" style="font-size: 1.2rem; opacity: 0.9;">Transform your business with custom websites, mobile apps, and enterprise software. Serving businesses across Africa and beyond with affordable, world-class digital solutions.</p>
+                <!-- Subheadline -->
+                <p class="lead mb-4" style="color: #4b5563; font-size: 1.25rem; line-height: 1.7; max-width: 540px;">
+                    Professional websites, mobile apps, and enterprise software delivered in as little as 3 days. Affordable pricing for African businesses.
+                </p>
                 
+                <!-- CTA Buttons -->
                 <div class="d-flex flex-wrap gap-3 mb-5">
-                    <a href="request-quote.php" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary" style="box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        Request a Quote
+                    <a href="request-quote.php" class="btn btn-lg px-4 py-3 d-inline-flex align-items-center" style="background: #111827; color: #fff; border-radius: 10px; font-weight: 600;">
+                        Get a Free Quote
+                        <i class="bi bi-arrow-right ms-2"></i>
                     </a>
-                    <a href="services.php" class="btn btn-outline-light btn-lg px-4 py-3">Explore Services</a>
+                    <a href="services.php" class="btn btn-lg px-4 py-3 d-inline-flex align-items-center" style="background: #fff; color: #374151; border: 1px solid #e5e7eb; border-radius: 10px; font-weight: 600;">
+                        <i class="bi bi-play-circle me-2"></i>
+                        View Our Work
+                    </a>
                 </div>
                 
-                <!-- Stats Cards -->
-                <div class="row g-3 mt-2">
-                    <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-box bg-primary rounded-3 p-2 me-3"><i class="bi bi-laptop text-white fs-5"></i></div>
-                                <div>
-                                    <h3 class="fs-2 fw-bold text-white mb-0">1,200+</h3>
-                                    <p class="mb-0 text-white-50">Websites</p>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Stats Row -->
+                <div class="d-flex flex-wrap gap-4 pt-4" style="border-top: 1px solid #e5e7eb;">
+                    <div>
+                        <div class="fw-bold" style="font-size: 2rem; color: #111827;">1,200+</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Websites Built</div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-box bg-success rounded-3 p-2 me-3"><i class="bi bi-phone text-white fs-5"></i></div>
-                                <div>
-                                    <h3 class="fs-2 fw-bold text-white mb-0">100+</h3>
-                                    <p class="mb-0 text-white-50">Mobile Apps</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 2rem; color: #111827;">100+</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Mobile Apps</div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-box bg-warning rounded-3 p-2 me-3"><i class="bi bi-people text-white fs-5"></i></div>
-                                <div>
-                                    <h3 class="fs-2 fw-bold text-white mb-0">20+</h3>
-                                    <p class="mb-0 text-white-50">Experts</p>
-                                </div>
-                            </div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 2rem; color: #111827;">4.8</div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="bi bi-star-fill" style="color: #fbbf24; font-size: 12px;"></i>
+                            <span style="color: #6b7280; font-size: 0.875rem;">Rating</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-lg-5 mt-5 mt-lg-0 d-none d-lg-block">
-                <!-- Website Showcase Card -->
-                <div class="card border-0 rounded-4 shadow-lg overflow-hidden" style="transform: rotate(2deg); background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);">
-                    <div class="card-header bg-gradient text-white p-4" style="background: linear-gradient(135deg, #198754 0%, #20c997 100%);">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h5 class="mb-0">Your Website in 3 Days</h5>
-                            <span class="badge bg-white text-success fw-bold">LIVE</span>
+            <!-- Right Content - Feature Cards -->
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <!-- Main Card -->
+                    <div class="card border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                        <div class="card-body p-0">
+                            <!-- Browser Mockup Header -->
+                            <div class="d-flex align-items-center gap-2 px-4 py-3" style="background: #1f2937;">
+                                <div class="d-flex gap-2">
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; background: #ef4444;"></span>
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; background: #fbbf24;"></span>
+                                    <span style="width: 12px; height: 12px; border-radius: 50%; background: #22c55e;"></span>
+                                </div>
+                                <div class="flex-grow-1 mx-3">
+                                    <div class="d-flex align-items-center justify-content-center px-3 py-1 rounded-pill" style="background: #374151; max-width: 300px; margin: 0 auto;">
+                                        <i class="bi bi-lock-fill me-2" style="color: #9ca3af; font-size: 10px;"></i>
+                                        <span style="color: #9ca3af; font-size: 12px;">yourbusiness.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Website Preview Content -->
+                            <div class="p-4" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);">
+                                <div class="text-center py-4">
+                                    <div class="mb-3">
+                                        <span class="d-inline-block px-3 py-1 rounded-pill" style="background: #ecfdf5; color: #059669; font-size: 0.75rem; font-weight: 600;">YOUR WEBSITE</span>
+                                    </div>
+                                    <h3 class="fw-bold mb-2" style="color: #111827;">Welcome to Your Business</h3>
+                                    <p style="color: #6b7280; font-size: 0.9rem;">Professional website ready in 3 days</p>
+                                    <div class="d-flex justify-content-center gap-2 mt-3">
+                                        <span class="px-3 py-2 rounded" style="background: #111827; color: #fff; font-size: 0.8rem;">Get Started</span>
+                                        <span class="px-3 py-2 rounded" style="background: #f3f4f6; color: #374151; font-size: 0.8rem;">Learn More</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-body p-4">
-                        <!-- Website Preview Mockup -->
-                        <div class="bg-light rounded-3 p-3 mb-3" style="border: 2px solid #e9ecef;">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="bg-danger rounded-circle me-2" style="width: 8px; height: 8px;"></div>
-                                <div class="bg-warning rounded-circle me-2" style="width: 8px; height: 8px;"></div>
-                                <div class="bg-success rounded-circle me-2" style="width: 8px; height: 8px;"></div>
-                                <small class="text-muted ms-2">yourwebsite.com</small>
-                            </div>
-                            <div class="bg-dark rounded-2 p-3 text-light" style="font-family: 'Courier New', monospace; font-size: 10px; line-height: 1.4;">
-                                <div class="mb-1">
-                                    <span class="text-info">&lt;title&gt;</span><span class="text-warning">Your Business - Professional Website</span><span class="text-info">&lt;/title&gt;</span>
-                                </div>
-                                <div class="mb-1">
-                                    <span class="text-success">// Built by AppNomu in 3 days</span>
-                                </div>
-                                <div class="mb-1">
-                                    <span class="text-info">&lt;h1&gt;</span><span class="text-white">Welcome to Your Business</span><span class="text-info">&lt;/h1&gt;</span>
-                                </div>
-                                <div class="mb-1">
-                                    <span class="text-info">&lt;p&gt;</span><span class="text-white">Converting visitors into customers</span><span class="text-info">&lt;/p&gt;</span>
-                                </div>
-                                <div class="mb-1">
-                                    <span class="text-danger">.mobile-responsive</span> <span class="text-white">{</span> <span class="text-warning">display: flex;</span> <span class="text-white">}</span>
-                                </div>
-                                <div class="mb-1">
-                                    <span class="text-danger">.seo-optimized</span> <span class="text-white">{</span> <span class="text-warning">rank: #1;</span> <span class="text-white">}</span>
+                    
+                    <!-- Floating Badge - Timeline -->
+                    <div class="position-absolute d-none d-lg-block" style="bottom: -20px; left: -30px; z-index: 10;">
+                        <div class="bg-white rounded-3 shadow-lg p-3" style="min-width: 200px;">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 40px; height: 40px; background: #ecfdf5;">
+                                    <i class="bi bi-lightning-charge-fill" style="color: #10b981;"></i>
                                 </div>
                                 <div>
-                                    <span class="text-info">&lt;button&gt;</span><span class="text-success">Get Started Today</span><span class="text-info">&lt;/button&gt;</span>
+                                    <div class="fw-bold" style="color: #111827; font-size: 0.9rem;">3-Day Delivery</div>
+                                    <div style="color: #6b7280; font-size: 0.75rem;">Fast turnaround time</div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Process Timeline -->
-                        <div class="row g-2 text-center">
-                            <div class="col-4">
-                                <div class="bg-primary bg-opacity-10 rounded-3 p-2">
-                                    <i class="bi bi-calendar-check text-primary fs-5"></i>
-                                    <small class="d-block fw-bold text-primary">Day 1</small>
-                                    <small class="text-muted">Design</small>
-                                </div>
+                    </div>
+                    
+                    <!-- Floating Badge - Rating -->
+                    <div class="position-absolute d-none d-lg-block" style="top: 20px; right: -20px; z-index: 10;">
+                        <div class="bg-white rounded-3 shadow-lg p-3">
+                            <div class="d-flex align-items-center gap-1 mb-1">
+                                <i class="bi bi-star-fill" style="color: #fbbf24;"></i>
+                                <i class="bi bi-star-fill" style="color: #fbbf24;"></i>
+                                <i class="bi bi-star-fill" style="color: #fbbf24;"></i>
+                                <i class="bi bi-star-fill" style="color: #fbbf24;"></i>
+                                <i class="bi bi-star-fill" style="color: #fbbf24;"></i>
                             </div>
-                            <div class="col-4">
-                                <div class="bg-warning bg-opacity-10 rounded-3 p-2">
-                                    <i class="bi bi-code-slash text-warning fs-5"></i>
-                                    <small class="d-block fw-bold text-warning">Day 2</small>
-                                    <small class="text-muted">Develop</small>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="bg-success bg-opacity-10 rounded-3 p-2">
-                                    <i class="bi bi-rocket-takeoff text-success fs-5"></i>
-                                    <small class="d-block fw-bold text-success">Day 3</small>
-                                    <small class="text-muted">Launch</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="text-center mt-3">
-                            <small class="text-success fw-bold">✓ Mobile Responsive ✓ SEO Optimized ✓ Fast Loading</small>
+                            <div style="color: #111827; font-size: 0.8rem; font-weight: 600;">4.8/5 on Trustpilot</div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Testimonial Badge -->
-                <a href="https://www.trustpilot.com/reviews/67efc34382bd78b8a840d44a" target="_blank" class="position-absolute bg-white rounded-4 shadow-lg p-3 text-decoration-none d-none d-lg-block" style="bottom: 30px; left: -20px; max-width: 320px; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'">
-                    <div>
-                        <div class="d-flex align-items-center mb-1">
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <i class="bi bi-star-fill text-warning me-1"></i>
-                            <small class="text-muted ms-1">Trustpilot.com</small>
-                            <i class="bi bi-box-arrow-up-right text-primary ms-1" style="font-size: 0.7rem;" title="View on Trustpilot"></i>
-                        </div>
-                        <p class="mb-1 small fw-bold text-dark">"This was a very good experience. It was quick and precise. I was given a three days deadline and it was made."</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="mb-0 small fw-bold text-dark">Isaac, CEO, All Times Recruits</p>
-                            <small class="text-muted">April 2025</small>
-                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients & Logos Section -->
+<section class="py-5" style="background: #fff; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;">
+    <div class="container">
+        <p class="text-center mb-4" style="color: #9ca3af; font-size: 0.875rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Trusted by businesses across Africa</p>
+        <div class="row align-items-center justify-content-center g-4">
+            <div class="col-6 col-md-2 text-center">
+                <div class="p-3 rounded-3" style="background: #f9fafb;">
+                    <span style="font-weight: 700; color: #374151; font-size: 1.1rem;">1,200+</span>
+                    <span class="d-block" style="color: #9ca3af; font-size: 0.75rem;">Websites</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <div class="p-3 rounded-3" style="background: #f9fafb;">
+                    <span style="font-weight: 700; color: #374151; font-size: 1.1rem;">300+</span>
+                    <span class="d-block" style="color: #9ca3af; font-size: 0.75rem;">Domains</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <div class="p-3 rounded-3" style="background: #f9fafb;">
+                    <span style="font-weight: 700; color: #374151; font-size: 1.1rem;">100+</span>
+                    <span class="d-block" style="color: #9ca3af; font-size: 0.75rem;">Mobile Apps</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 text-center">
+                <div class="p-3 rounded-3" style="background: #f9fafb;">
+                    <span style="font-weight: 700; color: #374151; font-size: 1.1rem;">20+</span>
+                    <span class="d-block" style="color: #9ca3af; font-size: 0.75rem;">Countries</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5" style="background: #f9fafb;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="d-inline-block px-3 py-1 rounded-pill mb-3" style="background: #ecfdf5; color: #059669; font-size: 0.8rem; font-weight: 600;">OUR SERVICES</span>
+            <h2 class="fw-bold mb-3" style="color: #111827; font-size: 2.25rem;">Everything You Need to Succeed Online</h2>
+            <p style="color: #6b7280; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">From websites to mobile apps, we provide end-to-end digital solutions for your business.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="h-100 p-4 bg-white rounded-4" style="border: 1px solid #e5e7eb; transition: all 0.2s ease;">
+                    <div class="d-flex align-items-center justify-content-center mb-3 rounded-3" style="width: 56px; height: 56px; background: #ecfdf5;">
+                        <i class="bi bi-globe" style="font-size: 1.5rem; color: #10b981;"></i>
                     </div>
-                </a>
+                    <h4 class="fw-bold mb-2" style="color: #111827;">Website Design</h4>
+                    <p style="color: #6b7280; font-size: 0.95rem;">Professional, responsive websites that convert visitors into customers. Ready in 3 days.</p>
+                    <a href="services.php" class="text-decoration-none fw-semibold" style="color: #10b981;">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="h-100 p-4 bg-white rounded-4" style="border: 1px solid #e5e7eb; transition: all 0.2s ease;">
+                    <div class="d-flex align-items-center justify-content-center mb-3 rounded-3" style="width: 56px; height: 56px; background: #fef3c7;">
+                        <i class="bi bi-phone" style="font-size: 1.5rem; color: #f59e0b;"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2" style="color: #111827;">Mobile Apps</h4>
+                    <p style="color: #6b7280; font-size: 0.95rem;">Native iOS and Android apps that engage your customers and grow your business.</p>
+                    <a href="services.php" class="text-decoration-none fw-semibold" style="color: #f59e0b;">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="h-100 p-4 bg-white rounded-4" style="border: 1px solid #e5e7eb; transition: all 0.2s ease;">
+                    <div class="d-flex align-items-center justify-content-center mb-3 rounded-3" style="width: 56px; height: 56px; background: #ede9fe;">
+                        <i class="bi bi-server" style="font-size: 1.5rem; color: #8b5cf6;"></i>
+                    </div>
+                    <h4 class="fw-bold mb-2" style="color: #111827;">Web Hosting</h4>
+                    <p style="color: #6b7280; font-size: 0.95rem;">Fast, secure hosting with 99.9% uptime. Free SSL certificates included.</p>
+                    <a href="https://clients.appnomu.com" class="text-decoration-none fw-semibold" style="color: #8b5cf6;">Learn more <i class="bi bi-arrow-right"></i></a>
+                </div>
             </div>
         </div>
         
-        <!-- Scroll down indicator -->
-        <div class="text-center mt-5 mb-3 d-none d-lg-block">
-            <a href="#services" class="text-white text-decoration-none">
-                <small class="d-block mb-2">Discover More</small>
-                <i class="bi bi-chevron-double-down fs-4 animate-bounce"></i>
+        <div class="text-center mt-5">
+            <a href="services.php" class="btn px-4 py-3" style="background: #111827; color: #fff; border-radius: 10px; font-weight: 600;">
+                View All Services <i class="bi bi-arrow-right ms-2"></i>
             </a>
         </div>
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="py-5 bg-light">
+<!-- Why Choose Us Section -->
+<section class="py-5" style="background: #fff;">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4 mb-4 mb-md-0">
-                <div class="stat-item">
-                    <h2 class="display-4 fw-bold text-primary">1200+</h2>
-                    <p class="lead">Websites Developed</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-                <div class="stat-item">
-                    <h2 class="display-4 fw-bold text-primary">300+</h2>
-                    <p class="lead">Domains Registered</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="stat-item">
-                    <h2 class="display-4 fw-bold text-primary">100+</h2>
-                    <p class="lead">Mobile Apps Developed</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- APPNOMU Meaning - Condensed -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold mb-3">What APPNOMU Stands For</h2>
-            <p class="lead text-muted">Our name is our mission—every letter represents our commitment to your success</p>
-        </div>
-        
-        <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">A</span>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="d-inline-block px-3 py-1 rounded-pill mb-3" style="background: #f0fdf4; color: #166534; font-size: 0.8rem; font-weight: 600;">WHY CHOOSE US</span>
+                <h2 class="fw-bold mb-4" style="color: #111827; font-size: 2.25rem; line-height: 1.2;">Why Smart Businesses Choose AppNomu</h2>
+                <p class="mb-4" style="color: #6b7280; font-size: 1.1rem; line-height: 1.7;">While others take weeks or months, we deliver professional websites in just 3 days. Here's what makes us different:</p>
+                
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-3" style="width: 48px; height: 48px; background: #ecfdf5;">
+                            <i class="bi bi-lightning-charge-fill" style="color: #10b981; font-size: 1.25rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1" style="color: #111827;">3-Day Delivery</h5>
+                            <p class="mb-0" style="color: #6b7280; font-size: 0.95rem;">Get your website live in 3 days, not 3 months. Start attracting customers immediately.</p>
+                        </div>
                     </div>
-                    <h5 class="fw-bold mb-1">Automate</h5>
-                    <p class="small text-muted mb-0">Streamline operations</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">P</span>
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-3" style="width: 48px; height: 48px; background: #fef3c7;">
+                            <i class="bi bi-shield-check" style="color: #f59e0b; font-size: 1.25rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1" style="color: #111827;">100% Satisfaction Guarantee</h5>
+                            <p class="mb-0" style="color: #6b7280; font-size: 0.95rem;">Not happy? We'll revise it until you love it, or give you a full refund.</p>
+                        </div>
                     </div>
-                    <h5 class="fw-bold mb-1">Personalize</h5>
-                    <p class="small text-muted mb-0">Tailor to your brand</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-warning text-dark d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">P</span>
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-3" style="width: 48px; height: 48px; background: #ede9fe;">
+                            <i class="bi bi-credit-card" style="color: #8b5cf6; font-size: 1.25rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1" style="color: #111827;">Flexible Payment Plans</h5>
+                            <p class="mb-0" style="color: #6b7280; font-size: 0.95rem;">Pay in installments. Just 20% down, then pay daily, weekly, or monthly.</p>
+                        </div>
                     </div>
-                    <h5 class="fw-bold mb-1">Perform</h5>
-                    <p class="small text-muted mb-0">Deliver with impact</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-info text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">N</span>
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-3" style="width: 48px; height: 48px; background: #fce7f3;">
+                            <i class="bi bi-headset" style="color: #ec4899; font-size: 1.25rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1" style="color: #111827;">24/7 Support</h5>
+                            <p class="mb-0" style="color: #6b7280; font-size: 0.95rem;">Your success is our success. We're always here to help you grow.</p>
+                        </div>
                     </div>
-                    <h5 class="fw-bold mb-1">Nurture</h5>
-                    <p class="small text-muted mb-0">Foster growth</p>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-danger text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">O</span>
-                    </div>
-                    <h5 class="fw-bold mb-1">Optimize</h5>
-                    <p class="small text-muted mb-0">AI-driven insights</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="fs-4 fw-bold">M</span>
-                    </div>
-                    <h5 class="fw-bold mb-1">Mobilize</h5>
-                    <p class="small text-muted mb-0">Work anywhere</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="text-center p-3">
-                    <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-2" style="width: 50px; height: 50px;">
-                        <span class="fs-4 fw-bold">U</span>
-                    </div>
-                    <h5 class="fw-bold mb-1">Unify</h5>
-                    <p class="small text-muted mb-0">One seamless platform for everything</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center mt-4">
-            <a href="about.php#appnomu-meaning" class="btn btn-outline-primary">Learn More About Our Mission</a>
-        </div>
-    </div>
-</section>
-
-<!-- Why AppNomu Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="col-lg-6">
                 <div class="position-relative">
-                    <img src="https://services.appnomu.com/assets/images/Hero_Website.jpg" alt="Why Choose AppNomu - Professional Website Development" class="img-fluid rounded-3 shadow">
-                    <div class="position-absolute bg-primary text-white p-4 rounded-3 shadow" style="bottom: -30px; right: -30px; max-width: 300px;">
-                        <div class="d-flex align-items-center">
-                            <div class="display-4 fw-bold me-3">20+</div>
-                            <div>
-                                <h4 class="mb-0">Professional Developers</h4>
-                                <p class="mb-0">Across Africa, India, and USA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 ps-lg-5 d-flex flex-column justify-content-center">
-                <h6 class="text-primary fw-bold mb-3">WHY CHOOSE US</h6>
-                <h2 class="display-5 fw-bold mb-4">Why Smart Businesses Choose AppNomu Over Everyone Else</h2>
-                <p class="lead mb-4">While others take weeks or months, we deliver professional websites in just 3 days. Here's what makes us different:</p>
-                
-                <div class="row g-4 mt-2">
-                    <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="feature-icon bg-success bg-opacity-10 p-3 rounded-3 me-3">
-                                <i class="bi bi-clock-fill text-success fs-4"></i>
+                    <img src="https://services.appnomu.com/assets/images/Hero_Website.jpg" alt="Why Choose AppNomu" class="img-fluid rounded-4 shadow-lg" style="width: 100%;">
+                    <!-- Floating Card -->
+                    <div class="position-absolute d-none d-lg-block bg-white rounded-3 shadow-lg p-3" style="bottom: -20px; left: -20px;">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 48px; height: 48px; background: #111827;">
+                                <span class="fw-bold text-white">20+</span>
                             </div>
                             <div>
-                                <h4 class="h5 fw-bold">Lightning-Fast Delivery</h4>
-                                <p class="mb-0">Get your website live in <strong>3 days, not 3 months</strong>. Start attracting customers immediately while competitors are still planning.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-3 me-3">
-                                <i class="bi bi-award-fill text-primary fs-4"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Guaranteed Results</h4>
-                                <p class="mb-0"><strong>1,200+ websites delivered on time.</strong> 100% client satisfaction rate. Your project will be completed as promised, guaranteed.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3">
-                                <i class="bi bi-graph-up-arrow text-warning fs-4"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Built to Convert</h4>
-                                <p class="mb-0">Every website is designed to <strong>turn visitors into customers</strong>. More leads, more sales, guaranteed ROI on your investment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="feature-icon bg-info bg-opacity-10 p-3 rounded-3 me-3">
-                                <i class="bi bi-shield-check text-info fs-4"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Never Left Behind</h4>
-                                <p class="mb-0"><strong>24/7 support even after launch.</strong> Your success is our success - we're always here to help you grow.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex">
-                            <div class="feature-icon bg-warning bg-opacity-10 p-3 rounded-3 me-3">
-                                <i class="bi bi-credit-card-fill text-warning fs-4"></i>
-                            </div>
-                            <div>
-                                <h4 class="h5 fw-bold">Flexible Payment Plans</h4>
-                                <p class="mb-0"><strong>Pay in installments, not upfront.</strong> Just 20% down, then pay daily, weekly, or monthly. <a href="payment-plans.php" class="text-primary fw-bold">Learn more →</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Risk Reversal & Guarantee -->
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="bg-light rounded-4 p-4 text-center">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h5 class="fw-bold mb-2">🛡️ 100% Satisfaction Guarantee</h5>
-                                    <p class="mb-0 text-muted">Not happy with your website? We'll revise it until you love it, or give you a full refund. No questions asked.</p>
-                                </div>
-                                <div class="col-md-4 mt-3 mt-md-0">
-                                    <div class="d-flex justify-content-center align-items-center">
-                                        <div class="me-3">
-                                            <small class="text-muted d-block">Trusted by</small>
-                                            <strong class="text-primary">1,200+ Businesses</strong>
-                                        </div>
-                                        <div class="text-warning">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <small class="text-muted ms-1">5.0</small>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="fw-bold" style="color: #111827; font-size: 0.9rem;">Expert Developers</div>
+                                <div style="color: #6b7280; font-size: 0.75rem;">Across Africa & beyond</div>
                             </div>
                         </div>
                     </div>

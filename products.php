@@ -3,51 +3,47 @@
 include_once 'includes/header.php';
 ?>
 
-<!-- Enhanced Products Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<!-- Products Hero Section -->
+<section class="page-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold me-3">AFRICAN INNOVATION</span>
-                    <span class="badge bg-success mb-0 px-3 py-2 fw-bold text-white">GLOBAL REACH</span>
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">African-Built</span> Products Serving the World
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    From Uganda to the globe: SalesQ serves 1,000+ businesses, Meizon Radio reaches 100K+ listeners, and CharityWave empowers 3,000+ organizations. Experience homegrown African innovation with international impact.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#salesq" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">Explore Products</a>
-                    <a href="#product-demos" class="btn btn-outline-light btn-lg px-4 py-3">Free Demos</a>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">OUR PRODUCTS</span>
+                <h1><span style="color: #10b981;">African-Built</span> Products Serving the World</h1>
+                <p>From Uganda to the globe: SalesQ serves 1,000+ businesses, Meizon Radio reaches 100K+ listeners, and CharityWave empowers 3,000+ organizations.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#salesq" class="btn btn-cta">
+                        Explore Products <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                    <a href="#product-demos" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        Free Demos
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-4 mt-lg-0">
-                <!-- Product Stats -->
+            <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">3</h3>
-                            <p class="mb-0 text-white-50">Flagship Products</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">3</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Flagship Products</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">4K+</h3>
-                            <p class="mb-0 text-white-50">Active Users</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">4K+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Active Users</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">50+</h3>
-                            <p class="mb-0 text-white-50">Countries Served</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">50+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Countries Served</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">99%</h3>
-                            <p class="mb-0 text-white-50">Uptime</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #10b981;">99%</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Uptime</div>
                         </div>
                     </div>
                 </div>

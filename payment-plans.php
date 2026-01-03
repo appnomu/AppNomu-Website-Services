@@ -173,40 +173,30 @@ include_once 'includes/header.php';
 </nav>
 
 <!-- Hero Section -->
-<section class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); padding: 80px 0 60px;" itemscope itemtype="https://schema.org/WebPageElement">
-    <div class="container position-relative">
-        <div class="row align-items-center">
-            <div class="col-lg-6 text-white mb-5 mb-lg-0">
-                <div class="badge bg-white text-primary px-3 py-2 mb-3 fw-bold">
-                    <i class="bi bi-credit-card me-2"></i>FLEXIBLE PAYMENT OPTIONS
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    Build Now,<br>
-                    <span style="background: linear-gradient(45deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Pay Over Time</span>
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.3rem; opacity: 0.95;">
-                    Get your custom website, web application, or mobile app with just <strong>20% upfront</strong>. Pay the balance in daily, weekly, or monthly installments that fit your budget.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <div class="d-flex align-items-center bg-white bg-opacity-10 rounded-3 px-3 py-2">
-                        <i class="bi bi-check-circle-fill text-warning me-2 fs-5"></i>
-                        <span class="fw-bold">20% Down Payment</span>
-                    </div>
-                    <div class="d-flex align-items-center bg-white bg-opacity-10 rounded-3 px-3 py-2">
-                        <i class="bi bi-check-circle-fill text-warning me-2 fs-5"></i>
-                        <span class="fw-bold">No Hidden Fees</span>
-                    </div>
-                    <div class="d-flex align-items-center bg-white bg-opacity-10 rounded-3 px-3 py-2">
-                        <i class="bi bi-check-circle-fill text-warning me-2 fs-5"></i>
-                        <span class="fw-bold">Flexible Terms</span>
-                    </div>
+<section class="page-hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">FLEXIBLE PAYMENT OPTIONS</span>
+                <h1>Build Now, <span style="color: #10b981;">Pay Over Time</span></h1>
+                <p>Get your custom website, web application, or mobile app with just <strong>20% upfront</strong>. Pay the balance in daily, weekly, or monthly installments that fit your budget.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background: #ecfdf5; color: #166534; font-size: 0.875rem; font-weight: 600;">
+                        <i class="bi bi-check-circle-fill me-2"></i>20% Down Payment
+                    </span>
+                    <span class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background: #ecfdf5; color: #166534; font-size: 0.875rem; font-weight: 600;">
+                        <i class="bi bi-check-circle-fill me-2"></i>No Hidden Fees
+                    </span>
+                    <span class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background: #ecfdf5; color: #166534; font-size: 0.875rem; font-weight: 600;">
+                        <i class="bi bi-check-circle-fill me-2"></i>Flexible Terms
+                    </span>
                 </div>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="#payment-calculator" class="btn btn-warning btn-lg px-4 py-3 fw-bold">
+                    <a href="#payment-calculator" class="btn btn-cta">
                         <i class="bi bi-calculator me-2"></i>Calculate Your Plan
                     </a>
-                    <a href="request-quote.php" class="btn btn-outline-light btn-lg px-4 py-3">
-                        <i class="bi bi-file-text me-2"></i>Get Started
+                    <a href="request-quote.php" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        Get Started
                     </a>
                 </div>
             </div>

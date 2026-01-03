@@ -1,32 +1,32 @@
     <?php if (!class_exists('Brand')) { require_once __DIR__ . '/brand.php'; } ?>
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-3">
+    <footer class="text-white pt-5 pb-3" style="background: #0f172a;">
         <div class="container">
             <div class="row">
                 <!-- Company Info Column -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="mb-3">
-                        <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?> Logo" height="45" class="footer-logo">
+                        <img src="<?php echo Brand::LOGO_URL; ?>" alt="<?php echo Brand::NAME; ?> Logo" height="48" class="footer-logo">
                     </div>
-                    <p class="text-white-50 mb-4"><?php echo Brand::refreshCopy('Professional web design, mobile apps, and digital solutions for African businesses. Trusted by 1,200+ clients across Uganda, Kenya, and beyond.'); ?></p>
+                    <p class="mb-4" style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7;"><?php echo Brand::refreshCopy('Professional web design, mobile apps, and digital solutions for African businesses. Trusted by 1,200+ clients across Uganda, Kenya, and beyond.'); ?></p>
                     
                     <!-- Social Links -->
                     <div class="mb-4">
-                        <h6 class="text-white mb-3">Follow <?php echo Brand::SHORT_NAME; ?></h6>
+                        <h6 class="text-white mb-3" style="font-size: 0.875rem;">Follow <?php echo Brand::SHORT_NAME; ?></h6>
                         <div class="d-flex gap-2">
-                            <a href="https://www.facebook.com/appnomu" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                            <a href="https://www.facebook.com/appnomu" target="_blank" class="btn btn-outline-light btn-sm" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
                                 <i class="bi bi-facebook"></i>
                             </a>
-                            <a href="https://x.com/appnomuSalesQ" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-twitter"></i>
+                            <a href="https://x.com/appnomuSalesQ" target="_blank" class="btn btn-outline-light btn-sm" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                                <i class="bi bi-twitter-x"></i>
                             </a>
-                            <a href="https://www.linkedin.com/company/our-appnomu" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                            <a href="https://www.linkedin.com/company/our-appnomu" target="_blank" class="btn btn-outline-light btn-sm" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
                                 <i class="bi bi-linkedin"></i>
                             </a>
-                            <a href="https://www.instagram.com/appnomu" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                            <a href="https://www.instagram.com/appnomu" target="_blank" class="btn btn-outline-light btn-sm" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
                                 <i class="bi bi-instagram"></i>
                             </a>
-                            <a href="https://www.youtube.com/@AppNomusalesQ" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                            <a href="https://www.youtube.com/@AppNomusalesQ" target="_blank" class="btn btn-outline-light btn-sm" style="width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
                                 <i class="bi bi-youtube"></i>
                             </a>
                         </div>
@@ -34,25 +34,25 @@
                     
                     <!-- Payment Methods -->
                     <div>
-                        <h6 class="text-white mb-3">Payment Methods</h6>
+                        <h6 class="text-white mb-3" style="font-size: 0.875rem;">Payment Methods</h6>
                         <div class="d-flex flex-wrap gap-2">
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://services.appnomu.com/assets/images/Airtel_logo.png" alt="Airtel Money" class="img-fluid" style="max-height: 20px;">
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <img src="https://services.appnomu.com/assets/images/Airtel_logo.png" alt="Airtel Money" class="img-fluid" style="max-height: 22px;">
                             </div>
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://services.appnomu.com/assets/images/MTN%20logo.png" alt="MTN Mobile Money" class="img-fluid" style="max-height: 20px;">
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <img src="https://services.appnomu.com/assets/images/MTN%20logo.png" alt="MTN Mobile Money" class="img-fluid" style="max-height: 22px;">
                             </div>
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa" class="img-fluid" style="max-height: 10px;">
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa" class="img-fluid" style="max-height: 12px;">
                             </div>
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard" class="img-fluid" style="max-height: 18px;">
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard" class="img-fluid" style="max-height: 20px;">
                             </div>
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png" alt="PayPal" class="img-fluid" style="max-height: 18px;">
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png" alt="PayPal" class="img-fluid" style="max-height: 20px;">
                             </div>
-                            <div class="bg-white rounded p-1" style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-                                <i class="bi bi-cash-stack text-success" style="font-size: 16px;"></i>
+                            <div class="bg-white p-1" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                                <i class="bi bi-cash-stack text-success" style="font-size: 18px;"></i>
                             </div>
                         </div>
                     </div>
@@ -138,63 +138,65 @@
                 </div>
             </div>
             
-            <hr class="my-4">
+            <hr class="my-4" style="border-color: #1e293b;">
             
             <!-- Trust Badges & Quick Stats -->
             <div class="row mb-4">
                 <div class="col-12">
-                    <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
-                        <div class="trust-badge">
-                            <i class="bi bi-shield-check text-success fs-3 mb-2"></i>
-                            <p class="mb-0 small text-white-50">Secure & Trusted</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 text-center">
+                        <div class="trust-badge px-3 py-2" style="background: rgba(16, 185, 129, 0.05); border-radius: 12px;">
+                            <i class="bi bi-shield-check fs-4 mb-1" style="color: #10b981;"></i>
+                            <p class="mb-0 small" style="color: #94a3b8;">Secure & Trusted</p>
                         </div>
-                        <div class="trust-badge">
-                            <i class="bi bi-clock-history text-info fs-3 mb-2"></i>
-                            <p class="mb-0 small text-white-50">24/7 Support</p>
+                        <div class="trust-badge px-3 py-2" style="background: rgba(6, 182, 212, 0.05); border-radius: 12px;">
+                            <i class="bi bi-clock-history fs-4 mb-1" style="color: #06b6d4;"></i>
+                            <p class="mb-0 small" style="color: #94a3b8;">24/7 Support</p>
                         </div>
                         <a href="https://www.trustpilot.com/review/appnomu.com" target="_blank" class="text-decoration-none">
-                            <div class="trust-badge">
-                                <i class="bi bi-star-fill text-warning fs-3 mb-2"></i>
-                                <p class="mb-0 small text-white-50">4.6★ Trustpilot</p>
+                            <div class="trust-badge px-3 py-2" style="background: rgba(245, 158, 11, 0.05); border-radius: 12px;">
+                                <i class="bi bi-star-fill fs-4 mb-1" style="color: #f59e0b;"></i>
+                                <p class="mb-0 small" style="color: #94a3b8;">4.6★ Trustpilot</p>
                             </div>
                         </a>
                         <a href="https://www.capterra.com/p/268650/AppNomu/reviews/" target="_blank" class="text-decoration-none">
-                            <div class="trust-badge">
-                                <i class="bi bi-star-fill text-warning fs-3 mb-2"></i>
-                                <p class="mb-0 small text-white-50">4.6★ Capterra</p>
+                            <div class="trust-badge px-3 py-2" style="background: rgba(245, 158, 11, 0.05); border-radius: 12px;">
+                                <i class="bi bi-star-fill fs-4 mb-1" style="color: #f59e0b;"></i>
+                                <p class="mb-0 small" style="color: #94a3b8;">4.6★ Capterra</p>
                             </div>
                         </a>
                         <a href="https://www.softwaresuggest.com/appnomu" target="_blank" class="text-decoration-none">
-                            <div class="trust-badge">
-                                <i class="bi bi-star-fill text-warning fs-3 mb-2"></i>
-                                <p class="mb-0 small text-white-50">4.7★ Software Suggest</p>
+                            <div class="trust-badge px-3 py-2" style="background: rgba(245, 158, 11, 0.05); border-radius: 12px;">
+                                <i class="bi bi-star-fill fs-4 mb-1" style="color: #f59e0b;"></i>
+                                <p class="mb-0 small" style="color: #94a3b8;">4.7★ Software Suggest</p>
                             </div>
                         </a>
-                        <div class="trust-badge">
-                            <i class="bi bi-people text-primary fs-3 mb-2"></i>
-                            <p class="mb-0 small text-white-50">1,200+ Clients</p>
+                        <div class="trust-badge px-3 py-2" style="background: rgba(37, 99, 235, 0.05); border-radius: 12px;">
+                            <i class="bi bi-people fs-4 mb-1" style="color: #2563eb;"></i>
+                            <p class="mb-0 small" style="color: #94a3b8;">1,200+ Clients</p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <hr class="my-4">
+            <hr class="my-4" style="border-color: #1e293b;">
             
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2026 <?php echo Brand::LEGAL_NAME; ?>. All rights reserved.</p>
-                    <p class="small text-white-50 mt-1">Proudly designed with <i class="bi bi-heart-fill text-danger"></i> by the CEO - Bahati Asher Faith himself</p>
+                    <p class="mb-1" style="color: #94a3b8; font-size: 0.875rem;">&copy; 2026 <?php echo Brand::LEGAL_NAME; ?>. All rights reserved.</p>
+                    <p class="small mb-0" style="color: #64748b;">Proudly designed with <i class="bi bi-heart-fill" style="color: #ef4444;"></i> by the CEO - Bahati Asher Faith</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
                     <ul class="list-inline mb-0">
                         <?php if (isset($footerLegal) && is_array($footerLegal)): ?>
                             <?php foreach ($footerLegal as $item): ?>
-                                <li class="list-inline-item"><a href="<?php echo $item['url']; ?>" class="text-white-50"><?php echo $item['label']; ?></a></li>
+                                <li class="list-inline-item"><a href="<?php echo $item['url']; ?>" style="color: #64748b; font-size: 0.875rem;"><?php echo $item['label']; ?></a></li>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'privacy-policy' : 'privacy-policy'; ?>" class="text-white-50">Privacy Policy</a></li>
-                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'terms-of-service' : 'terms-of-service'; ?>" class="text-white-50">Terms of Service</a></li>
-                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'cookie-policy' : 'cookie-policy'; ?>" class="text-white-50">Cookie Policy</a></li>
+                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'privacy-policy' : 'privacy-policy'; ?>" style="color: #64748b; font-size: 0.875rem;">Privacy Policy</a></li>
+                            <li class="list-inline-item mx-2" style="color: #334155;">|</li>
+                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'terms-of-service' : 'terms-of-service'; ?>" style="color: #64748b; font-size: 0.875rem;">Terms of Service</a></li>
+                            <li class="list-inline-item mx-2" style="color: #334155;">|</li>
+                            <li class="list-inline-item"><a href="<?php echo isset($baseUrl) ? $baseUrl . 'cookie-policy' : 'cookie-policy'; ?>" style="color: #64748b; font-size: 0.875rem;">Cookie Policy</a></li>
                         <?php endif; ?>
                     </ul>
                 </div>

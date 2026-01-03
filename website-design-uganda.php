@@ -21,43 +21,45 @@ include_once 'includes/header.php';
 </nav>
 
 <!-- Uganda-Specific Hero Section -->
-<section class="position-relative overflow-hidden text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); min-height: 90vh;">
-    <!-- Animated Background Pattern -->
-    <div class="position-absolute w-100 h-100" style="top: 0; left: 0; opacity: 0.05;">
-        <svg width="100%" height="100%">
-            <pattern id="ugandaPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                <circle cx="20" cy="20" r="2" fill="white"/>
-            </pattern>
-            <rect width="100%" height="100%" fill="url(#ugandaPattern)"/>
-        </svg>
-    </div>
-    
-    <div class="container position-relative py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-                    <span class="badge bg-light text-primary px-3 py-2 fw-bold" style="font-size: 0.9rem;">🇺🇬 BASED IN BUGIRI, UGANDA</span>
-                    <span class="badge bg-success px-3 py-2 fw-bold text-white" style="font-size: 0.9rem;">SERVING ALL UGANDA</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fw-bold" style="font-size: 0.9rem;">⚡ 3-DAY DELIVERY</span>
+<section class="page-hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge-label">🇺🇬 BASED IN BUGIRI, UGANDA</span>
                 </div>
-                <h1 class="display-2 fw-bold mb-4" style="line-height: 1.1;">
-                    Best Website Designer in <span style="background: linear-gradient(45deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Uganda</span>
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.4rem; line-height: 1.7; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-                    We are a professional website design company based in Uganda, offering affordable web hosting, reliable domain registration, and mobile app development services. Get expert solutions from the most affordable developers near you.
-                </p>
+                <h1>Best Website Designer in <span style="color: #10b981;">Uganda</span></h1>
+                <p>Professional website design company based in Uganda, offering affordable web hosting, reliable domain registration, and mobile app development services. Get expert solutions from the most affordable developers near you.</p>
                 
-                <!-- Stats Row -->
-                <div class="row g-3 mb-4">
-                    <div class="col-4">
-                        <div class="text-center">
-                            <h3 class="display-5 fw-bold mb-0">1,200+</h3>
-                            <small class="text-white-50">Websites Built</small>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background: #ecfdf5; color: #166534; font-size: 0.875rem; font-weight: 600;">
+                        <i class="bi bi-check-circle-fill me-2"></i>3-Day Delivery
+                    </span>
+                    <span class="d-inline-flex align-items-center px-3 py-2 rounded-pill" style="background: #fef3c7; color: #92400e; font-size: 0.875rem; font-weight: 600;">
+                        <i class="bi bi-check-circle-fill me-2"></i>From UGX 500,000
+                    </span>
+                </div>
+                
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="request-quote.php" class="btn btn-cta">
+                        Get Free Quote <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                    <a href="tel:+256200948420" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        <i class="bi bi-telephone me-2"></i> +256 200 948 420
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">1,200+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Websites Built</div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="text-center">
-                            <h3 class="display-5 fw-bold mb-0">3</h3>
+                    <div class="col-6">
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">3</div>
                             <small class="text-white-50">Days Delivery</small>
                         </div>
                     </div>

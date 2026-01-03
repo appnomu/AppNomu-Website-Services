@@ -9,58 +9,47 @@ $ogImage = "https://www.appnomu.com/assets/images/about-og.jpg";
 include_once 'includes/header.php';
 ?>
 
-<!-- Enhanced Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<!-- About Hero Section -->
+<section class="page-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3 flex-wrap gap-2">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold">SINCE 2021</span>
-                    <span class="badge bg-success mb-0 px-3 py-2 fw-bold text-white">GLOBAL PRESENCE</span>
-                    <span class="badge bg-warning mb-0 px-3 py-2 fw-bold text-dark">EASTERN UGANDA'S LARGEST</span>
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    Transforming <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">African Businesses</span> Through Digital Innovation
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Founded in Bugiri Municipality, Eastern Uganda, we've grown into one of the largest tech firms in the region with a global footprint. We've delivered 1,200+ websites, 100+ mobile apps, and innovative solutions that drive real business growth across Africa and the USA.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#mission" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">Our Mission</a>
-                    <a href="request-quote.php" class="btn btn-outline-light btn-lg px-4 py-3">Work With Us</a>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">ABOUT US</span>
+                <h1>Transforming African Businesses Through <span style="color: #10b981;">Digital Innovation</span></h1>
+                <p>Founded in Bugiri Municipality, Eastern Uganda, we've grown into one of the largest tech firms in the region. 1,200+ websites, 100+ mobile apps, and innovative solutions across Africa and the USA.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#mission" class="btn btn-cta">
+                        Our Mission <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                    <a href="request-quote.php" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        Work With Us
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-4 mt-lg-0">
-                <!-- Stats Cards -->
+            <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">1,200+</h3>
-                            <p class="mb-0 text-white-50">Websites Delivered</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">1,200+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Websites Delivered</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">100+</h3>
-                            <p class="mb-0 text-white-50">Mobile Apps</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">100+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Mobile Apps</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">5</h3>
-                            <p class="mb-0 text-white-50">Countries</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">5</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Countries</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">20+</h3>
-                            <p class="mb-0 text-white-50">Expert Team</p>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">7+</h3>
-                            <p class="mb-0 text-white-50">Years of Experience</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">20+</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Expert Team</div>
                         </div>
                     </div>
                 </div>
@@ -69,20 +58,21 @@ include_once 'includes/header.php';
     </div>
 </section>
 
-<!-- About Section -->
-<section class="py-5">
+<!-- Our Story Section -->
+<section class="content-section bg-white">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="https://services.appnomu.com/assets/images/About.png" alt="About AppNomu" class="img-fluid rounded shadow">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://services.appnomu.com/assets/images/About.png" alt="About AppNomu" class="img-fluid rounded-4 shadow-lg">
             </div>
             <div class="col-lg-6">
-                <h2 class="display-5 fw-bold mb-4">Our Story</h2>
-                <p class="lead">Founded in 2021 in Bugiri Municipality, Eastern Uganda, AppNomu has grown from a small team to become one of the largest tech firms in Eastern Uganda with a global footprint.</p>
-                <p>We specialize in website design, mobile app development, software solutions, hosting, and domain services—delivering world-class quality with deep understanding of African markets. With offices in Uganda and the USA, plus remote teams worldwide, we serve clients across Africa and beyond.</p>
-                <div class="mt-4">
-                    <a href="#mission" class="btn btn-primary me-2">Our Mission</a>
-                    <a href="team.php" class="btn btn-outline-primary">Meet Our Team</a>
+                <span class="section-badge">OUR STORY</span>
+                <h2 class="section-heading">From Bugiri to the World</h2>
+                <p class="section-subheading">Founded in 2021 in Bugiri Municipality, Eastern Uganda, AppNomu has grown from a small team to become one of the largest tech firms in Eastern Uganda with a global footprint.</p>
+                <p style="color: #6b7280; line-height: 1.7;">We specialize in website design, mobile app development, software solutions, hosting, and domain services—delivering world-class quality with deep understanding of African markets.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#mission" class="btn btn-cta">Our Mission <i class="bi bi-arrow-down ms-2"></i></a>
+                    <a href="team.php" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">Meet Our Team</a>
                 </div>
             </div>
         </div>
@@ -90,228 +80,125 @@ include_once 'includes/header.php';
 </section>
 
 <!-- What APPNOMU Means -->
-<section id="appnomu-meaning" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+<section id="appnomu-meaning" class="content-section" style="background: #f9fafb;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-4 fw-bold mb-3">A.P.P.N.O.M.U. — What We Stand For</h2>
-            <p class="lead text-muted">Our name is our mission. Every letter represents a commitment to your success.</p>
+            <span class="section-badge">OUR VALUES</span>
+            <h2 class="section-heading">What APPNOMU Stands For</h2>
+            <p class="section-subheading centered">Our name is our mission. Every letter represents a commitment to your success.</p>
         </div>
         
         <div class="row g-4">
-            <!-- A - Automate -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">A</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Automate</h4>
-                                <p class="text-muted mb-0">Empowering businesses to streamline operations, from sales to inventory, with smart, intuitive automation.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon green"><span class="fw-bold">A</span></div>
+                    <h4>Automate</h4>
+                    <p>Streamline operations with smart, intuitive automation.</p>
                 </div>
             </div>
-            
-            <!-- P - Personalize -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">P</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Personalize</h4>
-                                <p class="text-muted mb-0">Tailoring tools and communication to reflect each business's unique identity, culture, and customer journey.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon amber"><span class="fw-bold">P</span></div>
+                    <h4>Personalize</h4>
+                    <p>Tailoring tools to reflect your unique identity.</p>
                 </div>
             </div>
-            
-            <!-- P - Perform -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">P</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Perform</h4>
-                                <p class="text-muted mb-0">Delivering reliable, high-impact solutions that help businesses operate efficiently and scale with confidence.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon purple"><span class="fw-bold">P</span></div>
+                    <h4>Perform</h4>
+                    <p>High-impact solutions that help you scale.</p>
                 </div>
             </div>
-            
-            <!-- N - Nurture -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">N</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Nurture</h4>
-                                <p class="text-muted mb-0">Supporting entrepreneurs with tools that foster growth, trust, and long-term customer relationships.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon pink"><span class="fw-bold">N</span></div>
+                    <h4>Nurture</h4>
+                    <p>Tools that foster growth and customer relationships.</p>
                 </div>
             </div>
-            
-            <!-- O - Optimize -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">O</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Optimize</h4>
-                                <p class="text-muted mb-0">Enhancing workflows, data management, and campaign performance through AI-driven insights and smart design.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon cyan"><span class="fw-bold">O</span></div>
+                    <h4>Optimize</h4>
+                    <p>AI-driven insights and smart design.</p>
                 </div>
             </div>
-            
-            <!-- M - Mobilize -->
-            <div class="col-lg-6">
-                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: transform 0.3s;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle text-white d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                                    <span class="fs-3 fw-bold">M</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="fw-bold mb-2">Mobilize</h4>
-                                <p class="text-muted mb-0">Making business tools accessible—online and offline—so teams can work anywhere, anytime, without barriers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- U - Unify -->
-            <div class="col-lg-12">
-                <div class="card border-0 shadow-sm hover-lift" style="transition: transform 0.3s; background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                    <span class="fs-3 fw-bold">U</span>
-                                </div>
-                            </div>
-                            <div class="text-white">
-                                <h4 class="fw-bold mb-2 text-white">Unify</h4>
-                                <p class="mb-0" style="opacity: 0.9;">Bringing together communication, payments, marketing, and support into one seamless platform for full control.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card">
+                    <div class="card-icon green"><span class="fw-bold">M</span></div>
+                    <h4>Mobilize</h4>
+                    <p>Work anywhere, anytime, without barriers.</p>
                 </div>
             </div>
         </div>
         
         <div class="text-center mt-5">
-            <p class="lead fw-bold text-primary mb-3">This is more than a name—it's our promise to every client.</p>
-            <a href="request-quote.php" class="btn btn-primary btn-lg px-5 py-3">Experience the APPNOMU Difference</a>
+            <div class="modern-card d-inline-block px-5 py-4" style="background: #111827;">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 48px; height: 48px; background: #10b981;">
+                        <span class="fw-bold text-white">U</span>
+                    </div>
+                    <div class="text-start">
+                        <h4 class="text-white mb-1">Unify</h4>
+                        <p class="mb-0" style="color: #9ca3af;">One seamless platform for full control.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Why Choose AppNomu -->
-<section class="py-5 bg-light">
+<section class="content-section bg-white">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Why Choose AppNomu?</h2>
-            <p class="lead">What sets us apart from other tech companies</p>
+            <span class="section-badge">WHY US</span>
+            <h2 class="section-heading">Why Choose AppNomu?</h2>
+            <p class="section-subheading centered">What sets us apart from other tech companies</p>
         </div>
         
         <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-lightning-charge-fill fs-1 text-warning"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">Lightning Fast Delivery</h4>
-                        <p class="text-muted mb-0">3-day turnaround for most projects. We understand African businesses need speed to compete.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon amber mx-auto"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <h4>Lightning Fast Delivery</h4>
+                    <p>3-day turnaround for most projects.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-globe-africa fs-1 text-primary"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">Deep African Market Knowledge</h4>
-                        <p class="text-muted mb-0">We understand local challenges, payment systems, and user behaviors across African markets.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon green mx-auto"><i class="bi bi-globe"></i></div>
+                    <h4>African Market Knowledge</h4>
+                    <p>We understand local challenges and user behaviors.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-award-fill fs-1 text-success"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">World-Class Quality</h4>
-                        <p class="text-muted mb-0">Global standards at African prices. Our work competes internationally.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon purple mx-auto"><i class="bi bi-award-fill"></i></div>
+                    <h4>World-Class Quality</h4>
+                    <p>Global standards at African prices.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-headset fs-1 text-info"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">24/7 Support</h4>
-                        <p class="text-muted mb-0">Round-the-clock technical support in multiple languages and time zones.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon cyan mx-auto"><i class="bi bi-headset"></i></div>
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock technical support.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-shield-check fs-1 text-danger"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">100% Satisfaction Guarantee</h4>
-                        <p class="text-muted mb-0">We don't stop until you're completely satisfied with the results.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon pink mx-auto"><i class="bi bi-shield-check"></i></div>
+                    <h4>100% Satisfaction</h4>
+                    <p>We don't stop until you're satisfied.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100 text-center">
-                    <div class="card-body p-4">
-                        <div class="mb-3">
-                            <i class="bi bi-cash-stack fs-1" style="color: #6f42c1;"></i>
-                        </div>
-                        <h4 class="h5 fw-bold mb-3">Affordable Pricing</h4>
-                        <p class="text-muted mb-0">Transparent pricing with no hidden fees. Flexible payment plans available.</p>
-                    </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="modern-card text-center">
+                    <div class="card-icon green mx-auto"><i class="bi bi-cash-stack"></i></div>
+                    <h4>Affordable Pricing</h4>
+                    <p>Transparent pricing, flexible payment plans.</p>
                 </div>
             </div>
         </div>
@@ -319,96 +206,76 @@ include_once 'includes/header.php';
 </section>
 
 <!-- Client Success Stories Section -->
-<section class="py-5">
+<section class="content-section" style="background: #f9fafb;">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Trusted by 1,200+ African Businesses</h2>
-            <p class="lead">Real results from real clients across Uganda, Kenya, South Africa, and beyond</p>
+            <span class="section-badge">TESTIMONIALS</span>
+            <h2 class="section-heading">Trusted by 1,200+ African Businesses</h2>
+            <p class="section-subheading centered">Real results from real clients across Uganda, Kenya, South Africa, and beyond</p>
         </div>
         
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="me-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <small class="text-muted">Trustpilot.com</small>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="quote">"Quick and precise. I was given a three days deadline and it was made."</p>
+                    <div class="author">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 48px; height: 48px; background: #10b981;">
+                            <span class="text-white fw-bold">I</span>
                         </div>
-                        <p class="mb-3">"Quick and precise. I was given a three days deadline and it was made."</p>
-                        <div class="d-flex align-items-center">
-                            <div class="me-3">
-                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                    <span class="text-white fw-bold">I</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="mb-0">Isaac</h6>
-                                <small class="text-muted">CEO, All Times Recruits</small>
-                            </div>
+                        <div class="author-info">
+                            <h5>Isaac</h5>
+                            <span>CEO, All Times Recruits</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="me-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <small class="text-muted">Trustpilot.com</small>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="quote">"Professional support team and unlimited hosting makes it easy to manage multiple websites."</p>
+                    <div class="author">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 48px; height: 48px; background: #f59e0b;">
+                            <span class="text-white fw-bold">A</span>
                         </div>
-                        <p class="mb-3">"Professional support team and unlimited hosting makes it easy to manage multiple websites under one panel."</p>
-                        <div class="d-flex align-items-center">
-                            <div class="me-3">
-                                <div class="bg-success rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                    <span class="text-white fw-bold">A</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="mb-0">Alimony Godfrey</h6>
-                                <small class="text-muted">Web Developer</small>
-                            </div>
+                        <div class="author-info">
+                            <h5>Alimony Godfrey</h5>
+                            <span>Web Developer</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="me-3">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                            </div>
-                            <small class="text-muted">Direct Client</small>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="quote">"AppNomu transformed our organization's digital presence. Outstanding expertise."</p>
+                    <div class="author">
+                        <div class="d-flex align-items-center justify-content-center rounded-circle" style="width: 48px; height: 48px; background: #8b5cf6;">
+                            <span class="text-white fw-bold">K</span>
                         </div>
-                        <p class="mb-3">"AppNomu transformed our organization's digital presence. Their team's expertise and dedication to our mission was outstanding."</p>
-                        <div class="d-flex align-items-center">
-                            <div class="me-3">
-                                <div class="bg-info rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                                    <span class="text-white fw-bold">K</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h6 class="mb-0">Kona Wafula</h6>
-                                <small class="text-muted">CEO, Sarkonah Radiant Love</small>
-                            </div>
+                        <div class="author-info">
+                            <h5>Kona Wafula</h5>
+                            <span>CEO, Sarkonah Radiant Love</span>
                         </div>
                     </div>
                 </div>

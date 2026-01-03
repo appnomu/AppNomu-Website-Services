@@ -10,61 +10,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!-- Enhanced Contact Hero Section -->
-<section class="bg-primary text-white py-5" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);">
+<!-- Contact Hero Section -->
+<section class="page-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="badge bg-light text-primary mb-0 px-3 py-2 fw-bold me-3">24/7 SUPPORT</span>
-                    <span class="badge bg-success mb-0 px-3 py-2 fw-bold text-white">INSTANT RESPONSE</span>
-                </div>
-                <h1 class="display-3 fw-bold mb-4" style="line-height: 1.2;">
-                    Get <span style="background: linear-gradient(45deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Expert Support</span> from Africa's Leading Tech Team
-                </h1>
-                <p class="lead mb-4" style="font-size: 1.2rem; opacity: 0.9;">
-                    Connect with our team across Uganda and USA. Get instant chat support, 1-hour email response guarantee, and free consultations. We're here to help you succeed with personalized African expertise.
-                </p>
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#contactForm" class="btn btn-light btn-lg fw-bold px-4 py-3 text-primary">Send Message</a>
-                    <a href="tel:+256200948420" class="btn btn-outline-light btn-lg px-4 py-3">Call: +256 200 948 420</a>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge-label">CONTACT US</span>
+                <h1>Get <span style="color: #10b981;">Expert Support</span> from Our Team</h1>
+                <p>Connect with our team across Uganda and USA. Get instant chat support, 1-hour email response guarantee, and free consultations.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="#contactForm" class="btn btn-cta">
+                        Send Message <i class="bi bi-arrow-down ms-2"></i>
+                    </a>
+                    <a href="tel:+256200948420" class="btn" style="background: #f3f4f6; color: #374151; padding: 0.625rem 1.5rem; border-radius: 8px; font-weight: 600;">
+                        <i class="bi bi-telephone me-2"></i> +256 200 948 420
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-5 mt-4 mt-lg-0">
-                <!-- Support Stats -->
+            <div class="col-lg-6">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">24/7</h3>
-                            <p class="mb-0 text-white-50">Customer Support</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">24/7</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Customer Support</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">1H</h3>
-                            <p class="mb-0 text-white-50">Email Response</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">1H</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Email Response</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">2</h3>
-                            <p class="mb-0 text-white-50">Office Locations</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #111827;">2</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Office Locations</div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="bg-white bg-opacity-10 rounded-3 p-3 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                            <h3 class="fs-1 fw-bold text-white mb-0">FREE</h3>
-                            <p class="mb-0 text-white-50">Consultation</p>
+                        <div class="modern-card text-center">
+                            <div class="fw-bold" style="font-size: 2rem; color: #10b981;">FREE</div>
+                            <div style="color: #6b7280; font-size: 0.875rem;">Consultation</div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Uptime Visual -->
-                <div class="mt-4">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center backdrop-blur" style="backdrop-filter: blur(10px);">
-                        <img src="https://services.appnomu.com/assets/images/uptime.png" alt="99.9% Uptime Guarantee" class="img-fluid mb-3" style="max-height: 80px; filter: brightness(0) invert(1);">
-                        <h4 class="fw-bold text-white mb-1">99.9% Uptime</h4>
-                        <p class="mb-0 text-white-50 small">We're here when you need us most</p>
                     </div>
                 </div>
             </div>
